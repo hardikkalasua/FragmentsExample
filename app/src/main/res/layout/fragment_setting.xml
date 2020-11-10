@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/setting_constraint_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C54D4D"
+    tools:context=".SettingFragment">
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:clickable="true"
+        android:src="@android:drawable/ic_menu_edit"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@id/setting_constraint_layout"
+        app:layout_constraintEnd_toEndOf="@id/setting_constraint_layout" />
+
+    <TextView
+        android:id="@+id/settings_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings Page"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="@id/setting_constraint_layout"
+        app:layout_constraintEnd_toEndOf="@id/setting_constraint_layout"
+        app:layout_constraintStart_toStartOf="@id/setting_constraint_layout"
+        app:layout_constraintTop_toTopOf="@id/setting_constraint_layout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

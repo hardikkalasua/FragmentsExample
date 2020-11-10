@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/home_constraint_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#59ED24"
+    tools:context=".HomeFragment">
+
+    <Button
+        android:id="@+id/homepage_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/home_textView"
+        app:layout_constraintStart_toStartOf="@+id/home_textView"
+        app:layout_constraintTop_toBottomOf="@+id/home_textView" />
+
+    <TextView
+        android:id="@+id/home_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home Fragment"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/homepage_button"
+        app:layout_constraintEnd_toEndOf="@id/home_constraint_layout"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/home_constraint_layout"
+        app:layout_constraintTop_toTopOf="@id/home_constraint_layout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
